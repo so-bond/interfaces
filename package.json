@@ -1,0 +1,24 @@
+{
+  "name": "@so-bond/interfaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "contracts/index.js",
+  "files": [
+    "src/**/*/sol",
+    "contracts"
+  ],
+  "scripts": {
+    "build": "./build.sh",
+    "build:mon": "nodemon -w src -e sol --exec ./build.sh",
+    "slither": "docker run --rm  -v $(pwd):/share --entrypoint '/share/slither-cmd.sh' trailofbits/eth-security-toolbox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@saturn-chain/smart-contract": "^1.0.19"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2"
+  }
+}
