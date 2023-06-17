@@ -1,8 +1,14 @@
 {
   "name": "@so-bond/interfaces",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "contracts/index.js",
+  "files": [
+    "src/**/*.sol",
+    "contracts",
+    "LICENCE",
+    "README.md"
+  ],
   "scripts": {
     "build": "./build.sh",
     "build:mon": "nodemon -w src -e sol --exec ./build.sh",
