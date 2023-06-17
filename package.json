@@ -4,7 +4,7 @@
   "description": "",
   "main": "contracts/index.js",
   "files": [
-    "src/**/*/sol",
+    "src/**/*.sol",
     "contracts"
   ],
   "scripts": {
